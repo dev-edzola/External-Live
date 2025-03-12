@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './style.css'; // Make sure to import your CSS file
-import { FaTrash } from 'react-icons/fa'; // Import the trash icon from react-icons
 
 // Assuming you've installed and imported the Zoho SDK in your application
 // If not, you'll need to add: npm install zohostatic-creator-widgets
@@ -579,7 +578,7 @@ function OrderTrackingApp() {
                       onClick={() => deleteRecord(item.ID)}
                       disabled={deletingId === item.ID}
                     >
-                      {deletingId === item.ID ? 'Deleting...' : <FaTrash />}
+                      {deletingId === item.ID ? 'Deleting...' : 'Delete'}
                     </button>
                   </td>
                 </tr>
@@ -640,7 +639,7 @@ function OrderTrackingApp() {
   // Render component
   return (
     <div>
-      <h2 className="app-title">Edzola Order Management System</h2>
+      <h2 className="app-title">Order Management System</h2>
       
       {/* Error and success messages */}
       {error && (
