@@ -640,7 +640,7 @@ function OrderTrackingApp() {
   // Render component
   return (
     <div>
-      <h2 className="app-title">Edzola Order Management System</h2>
+      <h2 className="app-title">Order Management System</h2>
       
       {/* Error and success messages */}
       {error && (
